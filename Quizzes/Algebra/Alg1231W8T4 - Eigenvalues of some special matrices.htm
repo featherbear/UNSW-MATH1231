@@ -1,0 +1,99 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=OneNote.File>
+<meta name=Generator content="Microsoft OneNote 15">
+<link id=Main-File rel=Main-File
+href="Alg1231W8T4%20-%20Eigenvalues%20of%20some%20special%20matrices.htm">
+<link rel=File-List
+href="Alg1231W8T4%20-%20Eigenvalues%20of%20some%20special%20matrices_files/filelist.xml">
+</head>
+
+<body lang=en-AU style='font-family:Calibri;font-size:11.0pt'>
+
+<div style='direction:ltr;border-width:100%'>
+
+<div style='direction:ltr;margin-top:0in;margin-left:0in;width:11.7423in'>
+
+<div style='direction:ltr;margin-top:0in;margin-left:.0215in;width:6.4576in'>
+
+<p style='margin:0in;font-family:"Calibri Light";font-size:20.0pt'>Alg1231W8T4
+- Eigenvalues of some special matrices</p>
+
+</div>
+
+<div style='direction:ltr;margin-top:.0388in;margin-left:.0215in;width:2.6381in'>
+
+<p style='margin:0in;font-family:Calibri;font-size:10.0pt;color:#767676'>Thursday,
+13 September 2018</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:10.0pt;color:#767676'>7:05
+PM</p>
+
+</div>
+
+<div style='direction:ltr;margin-top:.4097in;margin-left:0in;width:11.7423in'>
+
+<p style='margin:0in'><img
+src="Alg1231W8T4%20-%20Eigenvalues%20of%20some%20special%20matrices_files/image001.png"
+width=1123 height=610
+alt="Machine generated alternative text:&#10;Consider the matrix &#10;1 &#10;1 &#10;1 &#10;1 &#10;3 &#10;2 &#10;1 &#10;3 &#10;This is a special type of matrix called a transition matrix, which are use to model simple random processes know as Markov chains. The two properties that define a &#10;transition matrix P are: &#10;1. Every entry in P is non-negative (i.e. greater than or equal to zero) &#10;2. Every column of P sums up to 1. &#10;Being a rather special type of matrix, transition matrices have rather special eigenvalues. &#10;Consider what happens when we multiply the transpose p T by the vector of all I's &#10;1 &#10;1 &#10;This proves that p T has an eigenvector with eigenvalue 1 &#10;eigenvalue. &#10;1 &#10;1 &#10;o &#10;1 &#10;2 &#10;9 &#10;1 &#10;1 &#10;o &#10;o &#10;1 &#10;1 &#10;1 &#10;O . Recalling what we learnt in the video, this means P also has the same corresponding &#10;Let's find the corresponding eigenvector of the matrix P above. By considering the augmented matrix &#10;(P -110) &#10;we row-reduce and back-substitute to get an eigenvector &lt;4,6,1&gt; &#10;-1/2 &#10;1/4 &#10;1/4 &#10;1/3 0 0 &#10;-1/3 "></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in'><img
+src="Alg1231W8T4%20-%20Eigenvalues%20of%20some%20special%20matrices_files/image002.png"
+width=1116 height=197
+alt="Machine generated alternative text:&#10;We can see this is quite different from &#10;will be. &#10;Note: the Maple notation for the vector &#10;1 &#10;I &#10;1 &#10;1 &#10;2 &#10;3 &#10;. So while P and PT have matching eigenvalues, it is hard to guess what (if any) the relationship between their eigenvectors "></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in'><img
+src="Alg1231W8T4%20-%20Eigenvalues%20of%20some%20special%20matrices_files/image003.png"
+width=1102 height=510
+alt="Machine generated alternative text:&#10;Consider a matrix A with the special property that Am = I for some positive integer m. Such a matrix is special, as such we might expect it to have special eigenvalues. &#10;Say v is an eigenvector of A with eigenvalue t. By left-multiplying m times by the matrix A we get &#10;Am v = Iv = v. &#10;Since v is an eigenvector with eigenvalue t, this implies that &#10;Since eigenvectors are non-zero O the only way this can be satisfied is if &#10;t &#10;implying that the eigenvalues of A must be mth roots of unity &#10;An example of such a matrix is &#10;o &#10;1 &#10;—1 &#10;Here m &#10;Recall: &#10;O (please enter the smallest possible m) and the eigenvalues are the set &#10;{1,-1} &#10;• a set in Maple notation is something of the form {1 ,1+2*1 , 3-2* I} &#10;• remember to use capital i (I) to represent i — &#10;—1 &#10;can be entered using the Maple syntax sqrt (2) "></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in'><img
+src="Alg1231W8T4%20-%20Eigenvalues%20of%20some%20special%20matrices_files/image004.png"
+width=1086 height=502
+alt="Machine generated alternative text:&#10;Consider a matrix A with the special property that Am = Z for some integer m. Here Z is the zero-matrix (i.e. the matrix filled with zeroes). Such a matrix A is called &#10;nilpotent, and as it is clearly special, it will have special eigenvalues. &#10;Say v is an eigenvector of A with eigenvalue t. By left-multiplying m times by the matrix A we get &#10;Am v = Zv = O. &#10;Since v is an eigenvector with eigenvalue t, this implies that &#10;tm v = O. &#10;Since eigenvectors are non-zero O the only way this can be satisfied is if &#10;implying that the eigenvalues of A must be zero &#10;An example of a nilpotent matrix is &#10;B &#10;t &#10;o &#10;o &#10;o &#10;1 &#10;o &#10;o &#10;—1 &#10;1 &#10;o &#10;since Bm &#10;o &#10;o &#10;o &#10;o &#10;o &#10;o &#10;o &#10;0 &#10;o &#10;where m &#10;3 "></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in'><img
+src="Alg1231W8T4%20-%20Eigenvalues%20of%20some%20special%20matrices_files/image005.png"
+width=977 height=706
+alt="Machine generated alternative text:&#10;Consider the matrix &#10;5 &#10;o &#10;o &#10;o &#10;1 &#10;—5 &#10;o &#10;o &#10;30 &#10;4 &#10;9 &#10;o &#10;—5 &#10;120 &#10;1300 &#10;300 &#10;This is a special type of matrix known as an upper triangular matrix. All the non-zero entries appear either on or above the main diagonal. &#10;The eigenvectors of this matrix may not be particularly obvious, but the eigenvalues are. To see why, let's calculate the characteristic polynomial of A. &#10;p(t) — det(A — tI) &#10;= det &#10;o &#10;o &#10;1 &#10;o &#10;o &#10;30 &#10;4 &#10;o &#10;By expanding down the first column we get &#10;p(t) &#10;Repeating this procedure we get &#10;—5 &#10;120 &#10;1300 &#10;300 - t &#10;o &#10;4 &#10;o &#10;120 &#10;1300 &#10;300 - t &#10;1300 &#10;o &#10;300 - t &#10;And so we can see the roots of p(t), and hence the eigenvalues of A , are the numbers in the set &#10;Note: enter your answer as a set (e.g. {1,2,3,4}). &#10;The same argument shows that the eigenvalues of an upper triangular matrix are &#10;the diagonal entries "></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in'><img
+src="Alg1231W8T4%20-%20Eigenvalues%20of%20some%20special%20matrices_files/image006.png"
+width=1054 height=543
+alt="Machine generated alternative text:&#10;Consider a matrix A with the special property that Am = A for some positive integer m. Such a matrix is special, and as such we might expect it to have special &#10;eigenvalues. &#10;Say v is an eigenvector of A with eigenvalue t. By left-multiplying m times by the matrix A we get &#10;Am v — Av &#10;Since v is an eigenvector with eigenvalue t this translates into &#10;Since eigenvectors are non-zero O the only way this can be satisfied is if &#10;implying that the eigenvalues of A must be either zero; or (m-l)th roots of unity &#10;An example of such a matrix is &#10;tmv &#10;tm &#10;-2 &#10;1 &#10;-1 &#10;tv. &#10;-5 &#10;3 &#10;o &#10;3 &#10;-2 &#10;—1 &#10;Here m &#10;Recall: &#10;5 and the eigenvalues are the set &#10;• a set in Maple notation is something of the form {1 ,1+2*1 , 3-2* I} &#10;• remember to use capital i (I) to represent i — &#10;—1 &#10;x./ä can be entered using the Maple syntax sqrt (2) "></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div>
+
+<p style='margin:0in'>&nbsp;</p>
+
+<p style='text-align:left;margin:0in;font-family:Arial;font-size:9pt;
+color:#969696;direction:ltr'>Created with Microsoft OneNote 2016.</p>
+
+</div>
+
+</body>
+
+</html>

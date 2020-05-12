@@ -1,0 +1,97 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=OneNote.File>
+<meta name=Generator content="Microsoft OneNote 15">
+<link id=Main-File rel=Main-File href="Alg1231W8T3%20-%20Diagonalisation.htm">
+<link rel=File-List href="Alg1231W8T3%20-%20Diagonalisation_files/filelist.xml">
+</head>
+
+<body lang=en-AU style='font-family:Calibri;font-size:11.0pt'>
+
+<div style='direction:ltr;border-width:100%'>
+
+<div style='direction:ltr;margin-top:0in;margin-left:0in;width:15.0215in'>
+
+<div style='direction:ltr;margin-top:0in;margin-left:.0215in;width:4.0479in'>
+
+<p style='margin:0in;font-family:"Calibri Light";font-size:20.0pt'>Alg1231W8T3
+- Diagonalisation</p>
+
+</div>
+
+<div style='direction:ltr;margin-top:.0388in;margin-left:.0215in;width:2.8541in'>
+
+<p style='margin:0in;font-family:Calibri;font-size:10.0pt;color:#767676'>Wednesday,
+12 September 2018</p>
+
+<p style='margin:0in;font-family:Calibri;font-size:10.0pt;color:#767676'>10:12
+PM</p>
+
+</div>
+
+<div style='direction:ltr;margin-top:.4097in;margin-left:0in;width:15.0215in'>
+
+<p style='margin:0in'><img
+src="Alg1231W8T3%20-%20Diagonalisation_files/image001.png" width=1321
+height=931
+alt="Machine generated alternative text:&#10;If we have a matrix A and we construct a matrix M , whose columns are just eigenvectors of A , then we always have &#10;AM = MD &#10;for some diagonal matrix D However, if we wish to use this matrix to write down a nice factored form for A, we must take care when constructing M to ensure that M is an invertible &#10;matrix. &#10;-11 &#10;Consider the matrix A &#10;7 &#10;If we define &#10;-14 &#10;This has eigenvectors VI — &#10;10 &#10;and v 2 &#10;AVI = 3 VI &#10;and &#10;where &#10;AV2 — &#10;—4&quot;. &#10;10 &#10;—10 &#10;(i.e define L to be the matrix whose columns are VI and 10V1)v then we can calculate &#10;1104) ( &#10;—11 &#10;Note: the Maple notation for the matrix &#10;112 &gt;,&lt; 314 &#10;3 &#10;o &#10;10 &#10;-10 &#10;3 &#10;Since the columns of L are linearly dependent; the matrix L &#10;If we instead define &#10;10 &#10;-10 &#10;whose columns are the linearly independent eigenvectors above, then we get &#10;—11 &#10;AM &#10;is not invertible! So we cannot use this to diagonalise A. &#10;1104) ( &#10;3 "></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in'><img
+src="Alg1231W8T3%20-%20Diagonalisation_files/image002.png" width=1301
+height=208
+alt="Machine generated alternative text:&#10;Since the columns of M are linearly independent, the matrix M is invertible. Namely M has inverse &#10;By multiplying on the right by M we get A = MDM¯I where &#10;In this case A is said to be diagonalisable "></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in'><img
+src="Alg1231W8T3%20-%20Diagonalisation_files/image003.png" width=1356
+height=566
+alt="Machine generated alternative text:&#10;Two eigenvectors with different eigenvalues are always linearly independent To see why, take a matrix A with eigenvectors VI and v2 such that &#10;AVI = AV2 = tv,2 where s # t. &#10;Recall that VI and v2 must be non-zero vectors, since being non-zero is part of the definition of an eigenvector &#10;Now consider the equation &#10;PVI + qu = O. &#10;(1) &#10;lution to (1) isp= q = O , then we will have shown VI and v2 are linearly independent &#10;If we can show that the only &#10;Since PVI = —qv,2 we have &#10;spvl = A(pvl) = A(—qv2) —tqv2 = tPV1 • &#10;Then, by rearrangement &#10;p(s — t)V1 = O. &#10;There are three cases to consider: &#10;VI = O, which is impossible since eigenvectors are non-zero by definition; &#10;O @twhich is impossible since the eigenvalues were assumed to be different, &#10;• orp=0. &#10;Only one of these three cases is possible, so we conclude p = 0_ Then equation (1) becomes &#10;qv2 = O. &#10;Since v2 must be a non-zero vector the only way to solve this is to have q = 0. Thus we have show that &#10;v2 must be linearly independent. &#10;the only solution &#10;O &#10;IS p &#10;0, and hence the vectors VI and "></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in'><img
+src="Alg1231W8T3%20-%20Diagonalisation_files/image004.png" width=1438
+height=198
+alt="Machine generated alternative text:&#10;The number of linearly independent eigenvectors for the eigenvalue is equal to nullity(A — M). &#10;• if A &#10;then there is one eigenvalue = 2 and nullity(A — 21) = 2 &#10;• ifB &#10;then there is only one eigenvalue = 2 and nullity(B — 21) = 1 &#10;Hence; &#10;O and the number of linearly independent eigenvectors for = 2 is 2 &#10;O &#10;and the number of linearly independent eigenvectors for = 2 is 1 &#10;Because the matrix B does not have enough linearly independent eigenvectors, it is called a defective matrix, and cannot be diagonalised "></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in'><img
+src="Alg1231W8T3%20-%20Diagonalisation_files/image005.png" width=521
+height=420
+alt="Machine generated alternative text:&#10;Which of the following matrices are diagonalisable? &#10;4 10 &#10;any n x n matrix with n linearly independent eigenvectors &#10;any 2 x 2 matrix with two distinct eigenvalues "></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+<p style='margin:0in'><img
+src="Alg1231W8T3%20-%20Diagonalisation_files/image006.png" width=1121
+height=617
+alt="Machine generated alternative text:&#10;1 &#10;1 &#10;We are told that A &#10;has eigenvalues 5 and 3 with respective eigenvectors &#10;-2 &#10;and &#10;. So we can diagonalise A by finding an invertible matrix &#10;—1 &#10;and diagonal matrix D such that &#10;5 &#10;i) If we wanted D to be the matrix D &#10;o &#10;M-IAM &#10;then we should take &#10;3 &#10;ii) If instead we wanted D to be the diagonal matrix D &#10;then we should take &#10;iii) One of the advantages of having a diagonal matrix is that matrix powers are easy to take, for example &#10;6 &#10;The relation for ATI is not nearly as simple. &#10;iv) Once we write A = MDM¯I we observe that 142 &#10;MD2M¯1 .43 = MD3M¯1, and so on. Thus, using parts (i) and (iii), we can easily calculate that the top &#10;left entry of 146 is 30521 &#10;o. &#10;1 &#10;Recall: the Maple notation for the matrix &#10;3 &#10;2 &#10;is &#10;4 "></p>
+
+<p style='margin:0in;font-family:Calibri;font-size:11.0pt'>&nbsp;</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div>
+
+<p style='margin:0in'>&nbsp;</p>
+
+<p style='text-align:left;margin:0in;font-family:Arial;font-size:9pt;
+color:#969696;direction:ltr'>Created with Microsoft OneNote 2016.</p>
+
+</div>
+
+</body>
+
+</html>
